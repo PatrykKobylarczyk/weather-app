@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.scss';
-import App from './WeatherApp';
+import './styles/index.scss';
+import WeatherApp from './components/WeatherApp';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
