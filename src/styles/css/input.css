@@ -1,0 +1,93 @@
+:root {
+  --input-size: 30px;
+}
+
+.city-input {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.input-wrap,
+form {
+  position: relative;
+}
+
+input,
+button,
+.city-input > button:before {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+input,
+.city-input > button {
+  font-size: var(--input-size)/2;
+  line-height: var(--input-size);
+  border: 1px solid white;
+  border-radius: var(--input-size);
+}
+
+input {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #666;
+  padding: 0 20px;
+  min-width: 350px;
+}
+
+.input-wrap button,
+.city-input > button:before {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: var(--input-size);
+  width: var(--input-size);
+  border: none;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: var(--input-size)/1.5;
+}
+
+input::placeholder {
+  color: #bbc;
+}
+
+.input-wrap button,
+.city-input > button,
+.city-input > button:before {
+  transition: background .3s, color .3s, right .3s;
+}
+
+.input-wrap button:hover,
+.city-input > button:hover,
+.city-input > button:hover::before {
+  color: white;
+  background: #ffd0d0;
+}
+
+.city-input > button:hover::before {
+  right: -5px;
+}
+
+.error-msg {
+  position: absolute;
+  right: 50px;
+  top: 32px;
+  color: #ce1f00;
+}
+
+.city-input > button {
+  position: absolute;
+  top: -5px;
+  right: 30%;
+  border-radius: var(--input-size);
+  padding: 0 54px;
+  color: rgba(224, 138, 138, 0.932);
+  border: none;
+  font-family: 'weathericons', 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+/*# sourceMappingURL=input.css.map */

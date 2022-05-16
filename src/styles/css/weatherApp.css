@@ -1,4 +1,4 @@
-.weatherApp{
+.weatherApp {
   position: relative;
   text-align: center;
   width: 50%;
@@ -7,8 +7,8 @@
   z-index: 1;
 }
 
-.bgImage{
-  background: linear-gradient(rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, .8)), url(../images/main-bg.png);
+.bgImage {
+  background: linear-gradient(rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.8)), url(../images/main-bg.png);
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -18,3 +18,4 @@
   height: 100%;
   z-index: -1;
 }
+/*# sourceMappingURL=weatherApp.css.map */
