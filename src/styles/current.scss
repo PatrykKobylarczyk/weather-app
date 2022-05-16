@@ -1,0 +1,93 @@
+.current-forecast,
+.city,
+.current-temp,
+.current-others {
+    display: flex;
+
+}
+
+.current-forecast {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.current-forecast h2 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.city {
+    flex-basis: 100%;
+    flex-flow: column;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+
+.city {
+    h2{
+        margin-top: 15px;
+    }
+    p{
+        margin-top: 5px;
+    }
+}
+
+.current-temp,
+.current-others {
+    flex-basis: 50%;
+}
+
+.current-temp,
+.city {
+    cursor: default;
+}
+
+.current-temp {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-temp h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.current-temp p {
+    position: absolute;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: left;
+    margin: 0;
+}
+
+.current-others {
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.current-others>* {
+    flex-basis: calc(100%/3);
+    transition: .4s;
+    cursor: default;
+}
+
+.current-others>*:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.current-others>*>h3 {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 5px;
+
+}
+.current-others>*>p {
+    font-size: .6rem;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
