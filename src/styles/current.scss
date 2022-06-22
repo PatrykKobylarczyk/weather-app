@@ -9,13 +9,17 @@
 .current-forecast {
     flex-wrap: wrap;
     justify-content: flex-start;
-}
 
-.current-forecast h2 {
-    text-transform: capitalize;
-    font-size: 2rem;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+    h2 {
+        text-transform: capitalize;
+        font-size: 3.7rem;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
 }
 
 .city {
@@ -23,16 +27,17 @@
     flex-flow: column;
     align-items: flex-start;
     padding-left: 30px;
-}
 
-.city {
     h2{
-        margin-top: 15px;
+        margin-top: 1.2rem;
     }
     p{
-        margin-top: 5px;
+        margin-top: .1rem;
     }
 }
+
+
+
 
 .current-temp,
 .current-others {
@@ -51,14 +56,14 @@
 }
 
 .current-temp h2 {
-    font-size: 3rem;
+    font-size: 4.8rem;
     margin: 0;
 }
 
 .current-temp p {
     position: absolute;
+    font-size: 1.3rem;
     font-weight: 300;
-    font-size: 1rem;
     text-align: left;
     margin: 0;
 }
@@ -81,13 +86,10 @@
 }
 
 .current-others>*>h3 {
-    font-size: 1rem;
-    font-weight: 100;
-    margin-top: 5px;
-
+    font-size: 1.8rem;
 }
-.current-others>*>p {
-    font-size: .6rem;
-    font-weight: 100;
-    margin-bottom: 5px;
+
+.current-others>*>* {
+    margin: 10px;
+    font-weight: 300;
 }

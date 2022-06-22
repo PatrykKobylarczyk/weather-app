@@ -30,12 +30,9 @@ const Current = props => {
     };
 
     const currentDate = () => {
-        const a = new Date();
-        const day = a.getDay()
-        const month = a.getMonth()
-        const time = `${day} ${a.getDate()} ${month}`;
-
-        return time;
+        const options = { weekday: 'long', month: 'long', day: 'numeric' };
+        const today  = new Date();
+        return today.toLocaleDateString("en-US", options);
     };
 
     const capitalizeFirstLetter = string => {
@@ -43,7 +40,7 @@ const Current = props => {
     }
 
     return (
-        <section className="current-forecast hide">
+        <section className="current-forecast">
             <div className="city">
                 <h2>{city}, <span>{country}</span></h2>
                 <p>{currentDate()}</p>

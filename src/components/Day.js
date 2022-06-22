@@ -16,7 +16,7 @@ const Day = props => {
 
     const date = x => {
         const a = new Date((x * 1000) + (timezone * 1000));
-        const days = ['Niedziela', 'Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota']
+        const days = ['Sunday', 'Monday', 'Thuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
         const day = days[a.getDay()];
         const time = `${day}`;
@@ -24,12 +24,12 @@ const Day = props => {
     };
 
     return (
-        <div className='day hide display'>
-            <h5>
+        <div className='day'>
+            <h4>
                 {date(day)}
-            </h5>
+            </h4>
             <Icons iconInfo={icon} />
-            <p><span>{max}°C</span><span>{min}°C</span></p>
+            <p><span>{max}°C</span>|<span>{min}°C</span></p>
         </div>
     );
 };

@@ -1,0 +1,43 @@
+@media(max-width:1200px) {
+
+    .city {
+        margin-top: 50px;
+    }
+
+    .day {
+        margin-top: 20px;
+        flex-basis: 40%;
+    }
+
+    .day:last-of-type {
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width:768px) {
+
+    .current-others>* {
+        flex-basis: calc(100%/2);
+    }
+
+    input {
+        min-width: 50vw;
+    }
+
+    .day:last-of-type {
+        margin-bottom: 150px;
+    }
+
+    .current-temp,
+    .current-others {
+        flex-basis: 100%;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:576px) {
+
+    .current-temp {
+        margin-bottom: 30px;
+    }
+}
