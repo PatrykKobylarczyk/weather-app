@@ -12,6 +12,3 @@ https://patrykkobylarczyk.github.io/weather-app/
 
 ## Author
 Patryk Kobylarczyk
-
-## Inspiration
-https://rawfour.github.io/weather-app-react/
