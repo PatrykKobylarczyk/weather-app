@@ -3,7 +3,6 @@
 .current-temp,
 .current-others {
     display: flex;
-
 }
 
 .current-forecast {
@@ -31,12 +30,11 @@
     h2{
         margin-top: 1.2rem;
     }
+    
     p{
         margin-top: .1rem;
     }
 }
-
-
 
 
 .current-temp,
@@ -53,19 +51,19 @@
     position: relative;
     justify-content: center;
     align-items: center;
-}
 
-.current-temp h2 {
-    font-size: 4.8rem;
-    margin: 0;
-}
+    h2 {
+        font-size: 4.8rem;
+        margin: 0;
+    }
 
-.current-temp p {
-    position: absolute;
-    font-size: 1.3rem;
-    font-weight: 300;
-    text-align: left;
-    margin: 0;
+    p {
+        position: absolute;
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-align: left;
+        margin: 0;
+    }
 }
 
 .current-others {
@@ -73,23 +71,23 @@
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
-}
 
-.current-others>* {
-    flex-basis: calc(100%/3);
-    transition: .4s;
-    cursor: default;
-}
+    &>* {
+        flex-basis: calc(100%/3);
+        transition: .4s;
+        cursor: default;
+    }
 
-.current-others>*:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
+    &>*:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
 
-.current-others>*>h3 {
-    font-size: 1.8rem;
-}
+    &>*>h3 {
+        font-size: 1.8rem;
+    }
 
-.current-others>*>* {
-    margin: 10px;
-    font-weight: 300;
+    &>*>* {
+        margin: 10px;
+        font-weight: 300;
+    }
 }
