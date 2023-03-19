@@ -28,7 +28,7 @@ function WeatherApp() {
   }
 
   const getCurrentData = (city) => {
-    Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e3bbcd38209e98c3c295a84414b911b1&units=metric`)
+    Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=metric`)
       .then(response => {
         // document.querySelectorAll('.hide').forEach((section) => {
         //   section.style.opacity = '0';
