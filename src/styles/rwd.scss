@@ -4,13 +4,11 @@
         margin-top: 50px;
     }
 
-    .day {
-        margin-top: 20px;
-        flex-basis: 40%;
-    }
-
-    .day:last-of-type {
-        flex-basis: 100%;
+    .forecast{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        padding-bottom: 5rem;
     }
 }
 
@@ -24,8 +22,8 @@
         min-width: 50vw;
     }
 
-    .day:last-of-type {
-        margin-bottom: 150px;
+    .forecast{
+        grid-template-columns: 1fr 1fr;
     }
 
     .current-temp,
@@ -39,5 +37,9 @@
 
     .current-temp {
         margin-bottom: 30px;
+    }
+
+    .forecast{
+        grid-template-columns: 1fr;
     }
 }

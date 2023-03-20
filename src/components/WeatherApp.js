@@ -30,13 +30,7 @@ function WeatherApp() {
   const getCurrentData = (city) => {
     Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=metric`)
       .then(response => {
-        // document.querySelectorAll('.hide').forEach((section) => {
-        //   section.style.opacity = '0';
-        // })
-        // // handle success
-        // setTimeout(() => {
           setData(response.data)
-        // }, 400)
 
         document.querySelector('.error-msg').textContent = '';
         document.querySelector('.input-wrap input').value = '';
